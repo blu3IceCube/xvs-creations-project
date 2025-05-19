@@ -1,6 +1,3 @@
-import Image from "next/image";
-import bgImg from "@/public/assets/Hero Image.png";
-import Navbar from "@/components/Navbar";
 import Link from "next/link";
 
 const Hero = () => {
