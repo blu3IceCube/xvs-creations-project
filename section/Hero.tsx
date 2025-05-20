@@ -9,6 +9,7 @@ const Hero = () => {
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
+        filter: "brightness(75%)",
       }}
     >
       <div className="absolute left-1/2 bottom-6 transform -translate-x-1/2 -translate-y-6 text-white z-10">

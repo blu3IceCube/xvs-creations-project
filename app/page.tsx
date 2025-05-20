@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Advertisement from "@/section/Advertisement";
 import Features1 from "@/section/Features1";
 import Features2 from "@/section/Features2";
 import Features3 from "@/section/Features3";
@@ -18,6 +19,7 @@ export default function Home() {
       <Specifications />
       <SpecNumber />
       <PictureBoard />
+      <Advertisement />
     </main>
   );
 }
