@@ -20,7 +20,7 @@ const rightLinks: NavLinkItem[] = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#1a1a1a] fixed top-0 left-0 right-0 z-50 text-white border-b">
+    <nav className="bg-[#1a1a1a] fixed top-0 left-0 right-0 z-50 text-white">
       <div className="mx-auto px-12">
         <div className="relative flex items-center justify-between gap-8 h-16">
           <div className="flex items-center space-x-5 justify-center ">

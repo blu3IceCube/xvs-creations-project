@@ -20,6 +20,8 @@ const ImgCard = ({
   description,
   align,
   size,
+  txtWidth,
+  txtSize,
 }: {
   src: StaticImageData;
   label?: string;
@@ -28,6 +30,8 @@ const ImgCard = ({
   description?: string;
   align?: TextAlign | undefined;
   size?: string;
+  txtWidth?: string;
+  txtSize?: string;
 }) => {
   return (
     <div className="flex flex-col gap-6">
@@ -43,7 +47,10 @@ const ImgCard = ({
         </span>
       )}
       {description && (
-        <p className="inline-block w-[360px] font-light text-sm">
+        <p
+          className="inline-block w-[360px] font-light text-sm"
+          style={{ width: txtWidth, fontSize: txtSize }}
+        >
           {description}
         </p>
       )}
