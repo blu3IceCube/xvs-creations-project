@@ -21,8 +21,9 @@ const FooterLinks = ({
         columnGap: gapX,
       }}
     >
-      {links.map((link) => (
+      {links.map((link, index) => (
         <Link
+          key={index}
           href="#"
           style={{
             fontSize: txtSize,

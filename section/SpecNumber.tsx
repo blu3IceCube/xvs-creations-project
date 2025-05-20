@@ -1,5 +1,4 @@
 import SpecNumCard from "@/components/SpecNumCard";
-import React from "react";
 
 const SpecNumber = () => {
   return (

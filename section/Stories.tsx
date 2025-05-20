@@ -4,7 +4,6 @@ import { useRef } from "react";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import stories from "@/data/stories";
-import Image from "next/image";
 import ImgCard from "@/components/ImgCard";
 
 const Stories = () => {
@@ -23,7 +22,6 @@ const Stories = () => {
     <div className="bg-[#1a1a1a] text-white pt-20">
       <div className="h-screen">
         <div className="h-4/5 w-4/5 mx-auto">
-          {/* Header Row */}
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-light">Our Stories</h2>
             <div className="flex space-x-4">
@@ -42,7 +40,6 @@ const Stories = () => {
             </div>
           </div>
 
-          {/* Scrollable Stories Row */}
           <div
             ref={scrollRef}
             className="flex overflow-x-auto space-x-8 scroll-smooth scrollbar-hide"

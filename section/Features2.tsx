@@ -1,6 +1,6 @@
 import Image from "next/image";
 import lexoZ from "@/public/assets/Features 2.2 Image.png";
-import Link from "next/link";
+import Buttons from "@/components/Buttons";
 
 const Features2 = () => {
   return (
@@ -20,14 +20,7 @@ const Features2 = () => {
                 cillum dolore eu fugiat
               </p>
             </div>
-            <div className="flex flex-row gap-10 items-center">
-              <Link href="#" className="py-2 px-8 bg-white text-[#1a1a1a]">
-                Order Now
-              </Link>
-              <Link href="#" className="py-2 px-8">
-                Learn More
-              </Link>
-            </div>
+            <Buttons texts={["Order Now", "Learn More"]} startColor="white" />
           </div>
         </div>
         <div>

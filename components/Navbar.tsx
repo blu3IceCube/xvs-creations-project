@@ -23,9 +23,13 @@ const Navbar = () => {
     <nav className="bg-[#1a1a1a] fixed top-0 left-0 right-0 z-50 text-white">
       <div className="mx-auto px-12">
         <div className="relative flex items-center justify-between gap-8 h-16">
-          <div className="flex items-center space-x-5 justify-center ">
+          <div className="flex items-center gap-10 justify-center ">
             {leftLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="text-base">
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-base hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
+              >
                 {link.label}
               </Link>
             ))}
@@ -35,9 +39,13 @@ const Navbar = () => {
               <Image className="" src={logo} quality={100} alt="Logo" />
             </Link>
           </div>
-          <div className="flex items-center space-x-5 ">
+          <div className="flex items-center gap-10 justify-center">
             {rightLinks.map((link) => (
-              <Link key={link.label} href={link.href} className="text-base">
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-base hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
+              >
                 {link.label}
               </Link>
             ))}

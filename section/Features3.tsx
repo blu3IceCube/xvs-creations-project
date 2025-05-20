@@ -1,6 +1,6 @@
 import Image from "next/image";
 import bgImg from "@/public/assets/Features 2.3 Img.png";
-import Link from "next/link";
+import Buttons from "@/components/Buttons";
 
 const Features3 = () => {
   return (
@@ -21,14 +21,10 @@ const Features3 = () => {
                     do eiusmod tempor
                   </p>
                 </div>
-                <div className="flex flex-row gap-10 items-center">
-                  <Link href="#" className="py-2 px-8 bg-black text-white">
-                    Order Now
-                  </Link>
-                  <Link href="#" className="py-2 px-8">
-                    Learn More
-                  </Link>
-                </div>
+                <Buttons
+                  texts={["Order Now", "Learn More"]}
+                  startColor="black"
+                />
               </div>
             </div>
             <div className="flex-[1]"></div>

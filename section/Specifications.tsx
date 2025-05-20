@@ -1,5 +1,4 @@
 import SpecCard from "@/components/SpecCard";
-import Link from "next/link";
 
 const Specifications = () => {
   return (
