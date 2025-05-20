@@ -1,6 +1,8 @@
 import Image from "next/image";
 import bgImg from "@/public/assets/Hero Image.png";
 
+import featureGif from "@/public/assets/Features 2.1 video.gif"
+
 const Features1 = () => {
   return (
     <div className="bg-[#1a1a1a] flex flex-col justify-center text-white h-full">
@@ -9,7 +11,7 @@ const Features1 = () => {
           <span className="text-5xl">Air X</span>
           <div>
             <Image
-              src={bgImg}
+              src={featureGif}
               alt="Air x"
               unoptimized={false}
               width={700}
