@@ -32,7 +32,7 @@ const Features1 = () => {
         gsap.from(split.words, {
           scrollTrigger: {
             trigger: span,
-            toggleActions: "restart none restart pause",
+            toggleActions: "restart none restart reset",
           },
           x: -100,
           autoAlpha: 0,

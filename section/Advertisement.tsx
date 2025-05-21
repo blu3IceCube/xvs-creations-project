@@ -11,7 +11,7 @@ const Advertisement = () => {
         <Image
           src={airXAd}
           alt="background"
-          className="object-cover brightness-75"
+          className="object-cover brightness-50"
           sizes="100vw"
           fill
         />
