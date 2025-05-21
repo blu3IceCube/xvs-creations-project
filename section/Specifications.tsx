@@ -1,6 +1,39 @@
+"use client";
+
 import SpecCard from "@/components/SpecCard";
 
+import { useRef } from "react";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { SplitText } from "gsap/SplitText";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const Specifications = () => {
+  const background = useRef(null);
+
+  useGSAP(
+    () => {
+      const container = background.current;
+      if (!container) return;
+
+      gsap.set(container, { filter: "brightness(0)" });
+
+      gsap.to(container, {
+        scrollTrigger: {
+          trigger: container,
+          toggleActions: "restart none restart pause",
+          start: "top 40%",
+        },
+        filter: "brightness(1)",
+        duration: 1.5,
+        ease: "power1.inOut",
+      });
+    },
+    { scope: background }
+  );
+
   return (
     <div
       className="min-h-screen w-full relative"
@@ -10,6 +43,7 @@ const Specifications = () => {
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
       }}
+      ref={background}
     >
       <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center text-white">
         <div className="flex flex-row grow h-full">
