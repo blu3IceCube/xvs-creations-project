@@ -64,7 +64,7 @@ const Features1 = () => {
           <span className="text-5xl">Air X</span>
           <div ref={image}>
             <Image
-              src={bgImg}
+              src={featureGif}
               alt="Air x"
               unoptimized={false}
               width={700}
