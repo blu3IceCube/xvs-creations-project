@@ -20,24 +20,30 @@ const Hero = () => {
     () => {
       const homeAnimation = gsap.timeline();
 
+      gsap.set(heroImage.current, { filter: "brightness(0)" });
+
       homeAnimation
-        .from(heroImage.current, {
-          opacity: 0,
-          scale: 0.5,
-          duration: 0.3,
-          delay: 0.5,
+        .to(heroImage.current, {
+          // opacity: 0,
+          // scale: 0.5,
+          // duration: 0.3,
+          // delay: 0.5,
+          filter: "brightness(1)",
+          duration: 1,
+          ease: "power1.inOut",
         })
         .from(button.current, {
           opacity: 0,
           y: "-=250",
-          duration: 0.5,
-          delay: 0.3,
+          duration: 0.3,
+          // delay: 0.3,
         });
 
       ScrollTrigger.create({
         animation: homeAnimation,
-        trigger: heroImage.current,
-        toggleActions: "restart none restart pause",
+        // trigger: heroImage.current,
+        trigger: button.current,
+        toggleActions: "restart none restart reset",
       });
     },
     { scope: button }

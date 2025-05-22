@@ -31,7 +31,7 @@ const Features3 = () => {
         gsap.from(split.words, {
           scrollTrigger: {
             trigger: span,
-            toggleActions: "restart none restart pause",
+            toggleActions: "restart none restart reset",
           },
           x: -100,
           autoAlpha: 0,
@@ -43,7 +43,7 @@ const Features3 = () => {
     gsap.from(image.current, {
       scrollTrigger: {
         trigger: image.current,
-        toggleActions: "restart none restart pause",
+        toggleActions: "restart none restart reset",
       },
       opacity: 0,
       scale: 0.5,

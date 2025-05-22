@@ -27,7 +27,7 @@ const Buttons = ({
     gsap.from(container, {
       scrollTrigger: {
         trigger: container,
-        toggleActions: "restart restart restart pause",
+        toggleActions: "restart restart restart reset",
       },
       y: 150,
       duration: 0.4,

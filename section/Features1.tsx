@@ -48,7 +48,7 @@ const Features1 = () => {
     gsap.to(image.current, {
       scrollTrigger: {
         trigger: image.current,
-        toggleActions: "restart none restart pause",
+        toggleActions: "restart none restart reset",
         start: "top 70%",
       },
       opacity: 1,

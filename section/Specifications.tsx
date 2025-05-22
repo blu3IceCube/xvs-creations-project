@@ -23,7 +23,7 @@ const Specifications = () => {
       gsap.to(container, {
         scrollTrigger: {
           trigger: container,
-          toggleActions: "restart none restart pause",
+          toggleActions: "restart none restart reset",
           start: "top 40%",
         },
         filter: "brightness(1)",
