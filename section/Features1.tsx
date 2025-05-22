@@ -66,7 +66,7 @@ const Features1 = () => {
             <Image
               src={featureGif}
               alt="Air x"
-              unoptimized={false}
+              unoptimized={true}
               width={700}
               height={700}
             />
