@@ -101,7 +101,7 @@ const PictureBoard = () => {
                 alt="image"
                 className="object-contain"
                 fill
-                sizes="100vw"
+                sizes="100%"
               />
               <div
                 ref={revealBox}

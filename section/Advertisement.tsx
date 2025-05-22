@@ -43,7 +43,7 @@ const Advertisement = () => {
 
   return (
     <div className="relative h-full text-white">
-      <div className="h-screen">
+      <div className="h-screen relative">
         <Image
           src={airXAd}
           alt="background"

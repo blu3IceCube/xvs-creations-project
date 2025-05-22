@@ -95,13 +95,19 @@ const ImgCard = ({
   });
 
   return (
-    <div className="flex flex-col gap-6" ref={text}>
+    <div className="flex flex-col gap-6 bg-[#1a1a1a]" ref={text}>
       <div
         style={{ width: width, height: height }}
         className="relative"
         ref={image}
       >
-        <Image src={src} alt="image" className="object-cover" fill />
+        <Image
+          src={src}
+          alt="image"
+          className="object-cover"
+          fill
+          sizes="100%"
+        />
         <div ref={revealBox} className="absolute inset-0 bg-[#1a1a1a] z-10" />
       </div>
       {label && (

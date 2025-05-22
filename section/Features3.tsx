@@ -55,7 +55,13 @@ const Features3 = () => {
     <div className="relative h-full bg-white">
       <div className="h-screen">
         <div className="absolute bottom-0 left-0 right-0 h-[380px]" ref={image}>
-          <Image src={bgImg} alt="background" className="object-cover" fill />
+          <Image
+            src={bgImg}
+            alt="background"
+            className="object-cover"
+            fill
+            sizes="100ve"
+          />
         </div>
         <div className="absolute top-0 bottom-0 left-0 right-0 flex items-center">
           <div className="flex flex-row grow">

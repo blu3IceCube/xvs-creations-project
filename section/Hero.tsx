@@ -51,7 +51,7 @@ const Hero = () => {
 
   return (
     <div className="min-h-screen w-full relative">
-      <div className="h-screen" ref={heroImage}>
+      <div className="h-screen relative" ref={heroImage}>
         <Image
           src={HeroImg}
           alt="Hero"

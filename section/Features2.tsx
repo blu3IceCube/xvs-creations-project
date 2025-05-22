@@ -47,8 +47,6 @@ const Features2 = () => {
         toggleActions: "restart none restart reset",
         start: "top 50%",
       },
-      // opacity: 0,
-      // scale: 0.5,
       duration: 1,
       x: 1000,
     });
