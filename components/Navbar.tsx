@@ -20,15 +20,15 @@ const rightLinks: NavLinkItem[] = [
 
 const Navbar = () => {
   return (
-    <nav className="bg-[#1a1a1a] fixed top-0 left-0 right-0 z-50 text-white">
-      <div className="mx-auto px-12">
+    <nav className="bg-[#1a1a1a] fixed top-0 left-0 right-0 z-50 text-white w-full overflow-x-hidden">
+      <div className="mx-auto px-12 w-full">
         <div className="relative flex items-center justify-between gap-8 h-16">
           <div className="flex items-center gap-10 justify-center ">
             {leftLinks.map((link) => (
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-base hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
+                className="text-lg hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
               >
                 {link.label}
               </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
               <Link
                 key={link.label}
                 href={link.href}
-                className="text-base hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
+                className="text-lg hover:border-b-yellow-300 hover:border-b hover:text-yellow-300 transition-colors duration-300"
               >
                 {link.label}
               </Link>

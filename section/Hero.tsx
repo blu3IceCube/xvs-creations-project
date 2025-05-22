@@ -24,10 +24,6 @@ const Hero = () => {
 
       homeAnimation
         .to(heroImage.current, {
-          // opacity: 0,
-          // scale: 0.5,
-          // duration: 0.3,
-          // delay: 0.5,
           filter: "brightness(1)",
           duration: 1,
           ease: "power1.inOut",
@@ -36,12 +32,10 @@ const Hero = () => {
           opacity: 0,
           y: "-=250",
           duration: 0.3,
-          // delay: 0.3,
         });
 
       ScrollTrigger.create({
         animation: homeAnimation,
-        // trigger: heroImage.current,
         trigger: button.current,
         toggleActions: "restart none restart reset",
       });
@@ -66,7 +60,7 @@ const Hero = () => {
         >
           <Link
             href="#"
-            className="border px-4 py-2 font-light hover:bg-white hover:text-black"
+            className="border px-4 py-2 font-light hover:bg-white hover:text-black xl:text-lg lg:text-lg"
           >
             Test Drive
           </Link>
